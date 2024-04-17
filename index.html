@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Guzev Vladislav</title>
+</head>
+<body>
+  
+<div class="forma" id="form">
+<form action="index.php" method="POST">
+  <p class="aligncenter">
+  </p>
+  <label></label>
+    ФИО:<br>
+    <input class="text" name="fio" required="" placeholder="">
+  <br>
+
+  <label>
+    Номер телефона:<br>
+    <input class="text" type="tel" name="phone" required="" placeholder="Номер телефона">
+  </label><br>
+
+  <label>
+    Email:<br>
+    <input class="text" name="email" type="email" required="" placeholder="Введите вашу почту">
+  </label><br>
+
+  <label>
+    Дата рождения:<br>
+    <input class="text" name="birth_date" value="" required="" type="date">
+  </label><br>
+
+  Ваш пол:<br>
+  <label><input type="radio" checked="checked" required="" name="gender" value="Мужской">
+    Мужской</label>
+  <label><input type="radio" name="gender" value="Женский">
+    Женский</label>
+    <br>    
+  <label class="label">
+    Любимые языки программирования:
+    <br>
+    <select name="favorite_languages[]" multiple="multiple" required="">
+      <option value="1">Pascal</option>
+      <option value="2">С</option>
+      <option value="3">С++</option>
+      <option value="4">JavaScript</option>
+      <option value="5">PHP</option>
+      <option value="6">Python</option>
+      <option value="7">Java</option>
+      <option value="8">Haskel</option>
+      <option value="9">Clojure</option>
+      <option value="10">Prolog</option>
+      <option value="11">Scala</option>
+    </select>
+  </label><br>
+
+  <label>
+    Биография:
+             <br>
+    <textarea name="biography"></textarea>
+  </label><br>
+
+  <label>
+    <input type="checkbox" name="contract_accepted" required="">
+    С контрактом ознакомлен
+  </label><br>
+ 
+  <input type="submit" class="button" value="Сохранить">
+</form>
+</div>
+
+<h2>1.Подключение к серверу СУБД</h2>
+<img src="1.png" class="imgone">
+<h2>2.Создание таблиц: FormData , FormDataLang и Lang </h2>
+<img src="2.png" class="imgone"><br>
+<img src="3.png" class="imgone">
+<img src="4.png" class="imgone">
+<h2>3.1.Заполняем таблицу Lang языками программирования </h2>
+<img src="5.png" class="imgone">
+<h2>3.2.Пытаемся посмотреть содержимое таблицы FormData , но из-за того что она пустая - ничего не выводит</h2>
+<img src="7.png" class="imgone">
+<h2>3.3.Просмотр содержания таблицы Lang</h2>
+<img src="6.png" class="imgone">
+<h2>4.Заполнение таблицы через форму на сайте</h2>
+<img src="8.png" class="imgone">
+<h2>5.Просмотр содержания таблиц</h2>
+<img src="9.png" class="scr">
+
+</body></html>
